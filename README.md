@@ -16,25 +16,40 @@ SDK.
 
 ## Deliverables:
 ● Webapp so users can interact with our chatbot
+
 ● chatbot that works and gives accurate information
 
 ### Setting/Context:
 Working with microsoft azure bot sdk. The project will live on github and be
 coded with javascript and react js.
 Schedule:
+
 	01/29/22 : Get Microsoft Azure
+
 	02/05/22 : Setup Environment
+
 	02/12/22 : Work on the chatbot
+
 	02/19/22 : Get the bot running
+
 	02/26/22 : Change the bot as needed
+
 	03/05/22 : Work on visualization for the bot
+
 	03/12/22 : Improve bot as needed
+
 	03/19/22 : Verify & Collect Data
+
 	03/26/22 : Cleanup Data
+
 	04/02/22 : Mock run to check implementation
+
 	04/09/22 : Usability testing
+
 	04/16/22 : Fix any issues caught by the users
+
 	04/23/22 : Final testing
+	
 ## Materials:
 ### Software:
 Github, Visual Studio, Microsoft Azure

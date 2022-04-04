@@ -16,9 +16,9 @@ bot = ChatBot(
     database_uri='sqlite:///database.sqlite3'
 )
 trainer = ChatterBotCorpusTrainer(bot)
-# trainer.train(
-#     'chatterbot.corpus.english'
-# )
+trainer.train(
+     'chatterbot.corpus.english'
+ )
 trainer.train(
     'Data/testdata.yml'
 )

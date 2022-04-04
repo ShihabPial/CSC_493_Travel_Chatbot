@@ -2,10 +2,11 @@
 <html>
 <head>
 	<title>Travel Bot</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="coffee.js"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<!-- 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -39,10 +40,66 @@
 	<br>
 	<br>
 	<section id="feature">
+		<div class="title-text">
+			<p>Features</p>
+			<h1>Why Choose Us</h1>
+		</div>
+		<div class="feature_box">
+			<div class="features">
+				<h1>Data Accuracy</h1>
+				<div class="feature-description">
+					<div class="feature-icon">
+						<i class="fa fa-check"></i>
+					</div>
+					<div class="feature-text">
+						<p>We provide the most recent and accurate covid restrictions of different countries in the world.</p>
+					</div>
+				</div>
 
+				<h1>User Friendly</h1>
+				<div class="feature-description">
+					<div class="feature-icon">
+						<i class="fa fa-shield"></i>
+					</div>
+					<div class="feature-text">
+						<p>Our site is really easy to navigate for users of all age.</p>
+					</div>
+				</div>
+			</div>
+
+<!-- 			<div class="features-img">
+				<img src="worker1.png">
+			</div> -->
+		</div>
 	</section>
 
-	
+	<section id="service">
+		<div class="title-text">
+			<p>Services</p>
+			<h1>We Provide Better</h1>
+		</div>
+
+		<div class="service-box">
+			<div class="coffees">
+				<img src="image3.jpg" style="width: 420; height: 322;">
+				<div class="overlay"></div>
+			</div>
+			<div class="coffees">
+				<img src="flight.gif">
+				<div class="overlay"></div>
+			</div>
+			<div class="coffees">
+				<img src="flight2.gif">
+				<div class="overlay"></div>
+			</div>
+			<div class="coffees">
+				<img src="globe.gif">
+				<div class="overlay"></div>
+			</div>
+
+			
+		</div>
+	</section>
 
 	<section id="footer">
 		<div class="title-text">

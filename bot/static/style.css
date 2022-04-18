@@ -2,6 +2,8 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Inconsolata', monospace;
+
+
 }
 
 #banner{
@@ -9,6 +11,8 @@
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	overflow-anchor: none;
+
 }
 
 .logo{
@@ -34,7 +38,7 @@
 }
 
 .banner-btn{
-	margin: 70px auto 0;
+	margin-top:20px;
 }
 
 .banner-btn a{
@@ -51,6 +55,37 @@
 	transition: color 0.5s;
 	text-align: center;
 }
+/* Chat box Styling */
+#box{
+	margin: auto;
+	max-width: 550px;
+	font: 15px arial, sans-serif;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	box-shadow: 5px 5px 5px grey;
+	border-radius: 15px;
+	max-height: 250px;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+
+
+
+p.botText{
+	text-align: left;
+	color: black;
+}
+p.userText{
+	text-align: right;
+	color: blue;
+}
+/* end */
 
 .banner-btn a span{
 	width: 0;

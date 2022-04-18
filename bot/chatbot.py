@@ -17,7 +17,7 @@ bot = ChatBot(
 )
 trainer = ChatterBotCorpusTrainer(bot)
 trainer.train(
-     'chatterbot.corpus.english'
+    #  'chatterbot.corpus.english'
  )
 trainer.train(
     'Data/testdata.yml'

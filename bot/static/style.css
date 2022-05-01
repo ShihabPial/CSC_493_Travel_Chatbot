@@ -58,7 +58,7 @@
 /* Chat box Styling */
 #box{
 	margin: auto;
-	max-width: 550px;
+	max-width: 600px;
 	font: 15px arial, sans-serif;
 	background-color: white;
 	border-style: solid;
@@ -69,7 +69,7 @@
 	padding-left: 25px;
 	box-shadow: 5px 5px 5px grey;
 	border-radius: 15px;
-	max-height: 250px;
+	max-height: 300px;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 }

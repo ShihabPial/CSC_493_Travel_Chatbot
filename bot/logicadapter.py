@@ -1,17 +1,24 @@
 from chatterbot.logic import LogicAdapter
+import yaml
+
+
 
 class MyLogicAdapter(LogicAdapter):
     def __init__(self, chatbot, **kwargs):
         super().__init__(chatbot, **kwargs)
+        
 
     def can_process(self, statement):
         # Check if statement is travel related question
-        if statement.text.startswith('Can i go to'):
-            return True
+        input_file = 'Data/testdata.yml'
+        for key in yaml.load(open(input_file)).keys():
+            if key in statement.text:
+                return True
         return False
 
     def process(self, input_statement, additional_response_selection_parameters):
         import random
+
         # Isolate the country name
             # todo
         
@@ -19,7 +26,7 @@ class MyLogicAdapter(LogicAdapter):
             #todo
 
         # Set confidence interval to 1 if a response is returned
-        confidence = random.uniform(0, 1)
+        confidence = 1
         # If no response is returned return "Country information not found"
             #todo
         selected_statement = input_statement

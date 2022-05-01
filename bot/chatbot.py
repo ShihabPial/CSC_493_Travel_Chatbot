@@ -9,10 +9,10 @@ bot = ChatBot(
     'Norman',
     storage_adapter='chatterbot.storage.SQLStorageAdapter',
     logic_adapters=[
+        'logicadapter.MyLogicAdapter',
         'chatterbot.logic.BestMatch',
-        'chatterbot.logic.MathematicalEvaluation',
-        'logicadapter.MyLogicAdapter'
-    ],
+        'chatterbot.logic.MathematicalEvaluation'
+        ],
     database_uri='sqlite:///database.sqlite3'
 )
 trainer = ChatterBotCorpusTrainer(bot)

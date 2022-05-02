@@ -13,7 +13,7 @@ class MyLogicAdapter(LogicAdapter):
         # Check if statement is travel related question
         # input_file = 'Data/testdata.yml'
 
-        data_yml = open("Data/testdata.yml")
+        data_yml = open('testdata.yml', encoding="utf-8")
         parsed_file = yaml.load(data_yml, Loader=yaml.FullLoader)
         countries = (parsed_file["conversations"])
         for country in countries:
@@ -25,7 +25,7 @@ class MyLogicAdapter(LogicAdapter):
         import random
 
         # Isolate the country name
-        data_yml = open("Data/testdata.yml")
+        data_yml = open('testdata.yml', encoding="utf-8")
         parsed_file = yaml.load(data_yml, Loader=yaml.FullLoader)
         countries = (parsed_file["conversations"])
         for country in countries:

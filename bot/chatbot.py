@@ -17,11 +17,9 @@ bot = ChatBot(
 )
 trainer = ChatterBotCorpusTrainer(bot)
 trainer.train(
-    #  'chatterbot.corpus.english'
+    'chatterbot.corpus.english'
  )
-trainer.train(
-    'Data/testdata.yml'
-)
+
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -38,11 +36,3 @@ if __name__ == "__main__":
 
 
 
-# print("Type something to begin")
-# while True:
-#     try:
-#         user_input = input()
-#         bot_resonse = bot.get_response(user_input)
-#         print("bot:", bot_resonse)       
-#     except(KeyboardInterrupt, EOFError, SystemExit):
-#         break

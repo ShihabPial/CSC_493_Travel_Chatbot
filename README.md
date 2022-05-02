@@ -98,9 +98,9 @@ Save the file and return to the projects root directory
 
 cd into the bot directory
 
-type 
+in the command line type 
 
 python3 chatbot.py
 
-in cli and open the local host on your browser.
+open the local host on your browser.
 

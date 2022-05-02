@@ -70,3 +70,37 @@ sources. We don’t know how the chatbot will react to our data and how long it 
 take to train the chatbot. One more thing we are looking forward to making at the
 moment is a working chatbot. We need to create it first and check if it is working
 as we want it to
+
+## Deploying the bot locally
+First clone the directory locally with ssh or https
+
+cd into the directory
+
+once inside the directory create and activate a virtual environment and download all dependencies with 
+
+pip install -r requirements.txt
+
+Once all dependencies are dowloaded open 
+
+CSC_493_Travel_Chatbot/venv/lib/python3.6/site-packages/chatterbot_corpus/corpus.py
+
+change line 58 
+
+from
+
+return yaml.load(datafile)
+
+to
+
+return yaml.load(datafile, Loader=yaml.FullLoader)
+
+Save the file and return to the projects root directory
+
+cd into the bot directory
+
+type 
+
+python3 chatbot.py
+
+in cli and open the local host on your browser.
+
